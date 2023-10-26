@@ -1,0 +1,19 @@
+﻿<Page x:Class="Dewey_Decimal_Training_App.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dewey_Decimal_Training_App"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Home">
+
+    <Grid>
+        <StackPanel x:Name="HomeStackPanel" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible">
+            <TextBlock Text="Dewey Decimal Classification System Training" FontSize="20" Margin="0,0,0,20"/>
+            <Button x:Name="btnReplacingBookTask" Content="Replacing Books Task" Click="StartReplacingBooksTask_Click" IsEnabled="True" Width="200" Height="40"/>
+            <Button x:Name="btnIdentifyAreas" Content="Identifying areas" Click="StartIdentifyingTask_Click" IsEnabled="True" Width="200" Height="40" Margin="0,10,0,0" />
+            <Button x:Name="btnFindCallNumbers" Content="Finding Call Numbers (Not Implemented)" Click="StartFindingCallNumbers_Click" IsEnabled="False" Width="200" Height="40" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
